@@ -781,6 +781,10 @@ STYLE REUTILISÉE
         }
         /* GUIDE SECTION */
         
+        .page-home main>div:not(.slider) {
+            padding: 30px 0;
+        }
+        
         .guide {
             background-color: var(--flashwhite-color);
         }
@@ -817,6 +821,10 @@ STYLE REUTILISÉE
             width: 300px;
             scroll-snap-align: start;
             flex-shrink: 0;
+        }
+        
+        .guide .scrollto .wrapper::-webkit-scrollbar-thumb {
+            --border-color: #f0f9f8;
         }
         /*-----------------------MEDIA QUERIES---------------------*/
         
