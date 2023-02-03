@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <meta name="title" content="site de ecommerce">
     <meta name="description" content="site de ecommerce">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <title>Shop</title>
 </head>
@@ -24,7 +25,7 @@
                     <div class="wrap">
                         <div class="header-left">
                             <div class="menu-bar">
-                                <a href="#0" class="menu-trigger"> <i class="ri-menu-4-fill"></i> </a>
+                                <a href="#0" class="menu-trigger" trigger-button> <i class="ri-menu-4-fill"></i> </a>
                             </div>
                             <div class="list-inline">
                                 <ul>
@@ -261,7 +262,7 @@
                 <div id="search-float" class="search-float">
                     <div class="container wide">
                         <form action="#" class="search" novalidate>
-                            <i class="ri-search-line"></i>
+                            <!-- <i class="ri-search-line"></i> -->
                             <input type="search" class="input" name="q" id="" placeholder="Cherchez un article">
                             <i class="ri-close-line" close-button></i>
                         </form>
@@ -269,19 +270,190 @@
                 </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <div class="slider">
+                <div class="sliderbox swiper">
+                    <div class="wrap swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <div class="image">
+                                <div class="ob-cover">
+                                    <img src="assets/slider_02.jpg" alt="">
+                                </div>
+
+                                <div class="title-info">
+                                    <div class="container wide">
+                                        <div class="wrap">
+                                            <span class="price">$59</span>
+                                            <h3 class="title">Pretty Sweat For Winter</h3>
+                                            <div class="button">
+                                                <a href="#" class="primary-btn">Achetez</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="image">
+                                <div class="ob-cover">
+                                    <img src="assets/slider_01.jpg" alt="">
+                                </div>
+
+                                <div class="title-info">
+                                    <div class="container wide">
+                                        <div class="wrap">
+                                            <span class="price">$59</span>
+                                            <h3 class="title">Pretty Sweat For Winter</h3>
+                                            <div class="button">
+                                                <a href="#" class="primary-btn">Achetez</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="image">
+                                <div class="ob-cover">
+                                    <img src="assets/slider_03.jpg" alt="">
+                                </div>
+
+                                <div class="title-info">
+                                    <div class="container wide">
+                                        <div class="wrap">
+                                            <span class="price">$59</span>
+                                            <h3 class="title">Pretty Sweat For Winter</h3>
+                                            <div class="button">
+                                                <a href="#" class="primary-btn">Achetez</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-pagination">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer></footer>
     </div>
     <div class="overlay" data-overlay></div>
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="wrap">
+            <a href="" class="close-">
+                <i class="ri-close-line"></i>
+            </a>
+            <div class="main-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>Shop</span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a href="">
+                                <span>Articles</span>
+                                <span class="child-trigger">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu list-block">
+                                <li>
+                                    <a href="">Dolce & Gabbana</a>
+                                </li>
+                                <li>
+                                    <a href="">Gucci</a>
+                                </li>
+                                <li>
+                                    <a href="">Sneakers</a>
+                                </li>
+                                <li>
+                                    <a href="">Adidas</a>
+                                </li>
+                                <li>
+                                    <a href="">New Balance</a>
+                                </li>
+                                <li>
+                                    <a href="">Nike</a>
+                                </li>
+                                <li>
+                                    <a href="">Louis Vutton</a>
+                                </li>
+                                <li>
+                                    <a href="">Puma</a>
+                                </li>
+                                <li>
+                                    <a href="">Zara</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a href="">
+                                <span>Solde</span>
+                                <span class="child-trigger">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu list-block">
+                                <li>
+                                    <a href="">Dolce & Gabbana</a>
+                                </li>
+                                <li>
+                                    <a href="">Gucci</a>
+                                </li>
+                                <li>
+                                    <a href="">Sneakers</a>
+                                </li>
+                                <li>
+                                    <a href="">Adidas</a>
+                                </li>
+                                <li>
+                                    <a href="">New Balance</a>
+                                </li>
+                                <li>
+                                    <a href="">Nike</a>
+                                </li>
+                                <li>
+                                    <a href="">Louis Vutton</a>
+                                </li>
+                                <li>
+                                    <a href="">Puma</a>
+                                </li>
+                                <li>
+                                    <a href="">Zara</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Features</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="button">
+                    <a href="" class="secondary-btn login">
+                        Se connecter
+                    </a>
+                    <a href="" class="primary-btn register">
+                        S'inscrire
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
 
 </html>
