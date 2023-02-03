@@ -38,27 +38,60 @@ for (let index = 0; index < triggerOpen.length; index++) {
 
 
 
-const swiper = new Swiper('.sliderbox', {
+const caroussel = new Swiper('.sliderbox', {
     // Optional parameters
 
-    loop: true,
-    effect: 'fade',
-    autoHeight: true,
+    spaceBetween: 30,
+    slidePerView: 'auto',
+    centeredSlides: true,
 
     // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
 
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        // disableOnInteraction: true,
+
+    breakpoints: {
+        481: {
+            slidePerView: 2,
+            slidePerGroup: 1,
+            centeredSlides: false
+        },
+        640: {
+            slidePerView: 3,
+            slidePerGroup: 3,
+            centeredSlides: false
+        },
+        992: {
+            slidePerView: 4,
+            slidePerGroup: 4,
+            centeredSlides: false
+        },
     },
 
 });
+// const swiper = new Swiper('.', {
+//     // Optional parameters
+
+//     loop: true,
+//     effect: 'fade',
+//     autoHeight: true,
+
+//     // If we need pagination
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     loop: true,
+//     autoplay: {
+//         delay: 3000,
+//         // disableOnInteraction: true,
+//     },
+
+// });

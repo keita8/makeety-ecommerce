@@ -826,6 +826,11 @@ STYLE REUTILISÉE
         .guide .scrollto .wrapper::-webkit-scrollbar-thumb {
             --border-color: #f0f9f8;
         }
+        /* .caroussel .dotgrid .wrapper {
+            display: flex;
+            grid-template-columns: unset;
+            gap: unset;
+        } */
         /*-----------------------MEDIA QUERIES---------------------*/
         
         @media (min-width: 992px) {
