@@ -483,7 +483,8 @@ STYLE REUTILISÉE
             align-self: center;
         }
         
-        form.search :where(i) {
+        form.search :where(i,
+        .submit) {
             position: absolute;
             left: 0;
             top: 0;
@@ -505,9 +506,22 @@ STYLE REUTILISÉE
             cursor: pointer !important;
         }
         
-        form.search :where(i:last-child) {
+        form.search :where(.submit,
+        i:last-child) {
             left: auto;
             right: 0;
+        }
+        
+        form.search .submit {
+            border: 0;
+            color: transparent;
+            background-color: transparent;
+            color: var(--transition-background);
+            width: 50px;
+            height: 100%;
+            right: 0;
+            z-index: 1;
+            cursor: pointer !important;
         }
         
         .inner-header .search .input {
@@ -785,8 +799,9 @@ STYLE REUTILISÉE
             padding: 70px 0;
         }
         
-        .page-home main>div:not(.slider) {
-            padding: 50px 0;
+        .page-home main>div:not(.slider),
+        .inner-footer {
+            padding: 100px 0;
         }
         
         .guide {
@@ -1015,6 +1030,59 @@ STYLE REUTILISÉE
         .frominsta .dot-image {
             margin: 0;
         }
+        /*------------------------FOOTER---------------*/
+        
+        .inner-footer {
+            background: var(--flashwhite-color);
+            line-height: 1.4;
+            padding-bottom: 30px;
+        }
+        
+        .inner-footer .wrap>div {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            gap: 60px;
+        }
+        
+        .inner-footer .subscribe {
+            width: 100%;
+        }
+        
+        .inner-footer .top .subscribe h3 {
+            margin-bottom: 20px;
+        }
+        
+        .inner-footer p {
+            font-size: var(--fs14);
+            line-height: 1.4;
+        }
+        
+        .inner-footer .search {
+            max-width: 400px;
+        }
+        
+        .inner-footer .search .input {
+            font-size: var(--fs14);
+            border: none;
+            outline: none;
+        }
+        
+        form :where(input,
+        textarea,
+        select) {
+            font-size: var(--fs14);
+            outline: 0;
+            background-color: transparent;
+            padding: 10px 20px;
+            transition: border .3s;
+        }
+        
+        .inner-footer .bottom {
+            padding: 40px 0;
+            align-items: center;
+            justify-content: space-between;
+        }
         /*-----------------------MEDIA QUERIES---------------------*/
         
         @media (min-width:768px) {
@@ -1121,5 +1189,8 @@ STYLE REUTILISÉE
         @media (max-width:480px) {
             .caroussel .dotgrid .item {
                 width: 100%;
+            }
+            .inner-footer .bottom {
+                flex-direction: column;
             }
         }
