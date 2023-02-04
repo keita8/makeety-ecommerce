@@ -816,12 +816,14 @@ STYLE REUTILISÉE
             line-height: 1.4;
         }
         
-         :is(.guide) .dot-image .thumbnail {
+         :is(.guide,
+        .fromblog) .dot-image .thumbnail {
             position: relative;
             opacity: unset;
         }
         
-        .guide .wrapper .item {
+         :is(.guide,
+        .fromblog) .wrapper .item {
             width: 300px;
             scroll-snap-align: start;
             flex-shrink: 0;
@@ -939,6 +941,30 @@ STYLE REUTILISÉE
         .banner h3 {
             --fs-max: 70px;
         }
+        /*----------BLOG------------*/
+        
+        .fromblog .dot-title {
+            --primary-font: var(--second-font);
+            --fs14: 18px;
+            --fw600: 400;
+            margin-top: 10px;
+        }
+        
+        .fromblog .dot-info>a {
+            display: inline-block;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid var(--light-color);
+            color: var(--green-midnight);
+            padding: 1px 10px;
+            transition: var(--transition-background), var(--transition-color), var(--transition-border);
+        }
+        
+        .fromblog .dot-info>a:hover {
+            background-color: var(--dark-color);
+            color: var(--flashwhite-color);
+            border-color: var(--dark-color);
+        }
         /*-----------------------MEDIA QUERIES---------------------*/
         
         @media (min-width:768px) {
@@ -1010,6 +1036,9 @@ STYLE REUTILISÉE
             }
             .slider .button a {
                 padding: 10px 25px;
+            }
+            .scrollto .wrapper .item {
+                width: unset;
             }
         }
         /* 1200px */
