@@ -959,6 +959,6 @@ STYLE REUTILISÉE
         
         @media (max-width:480px) {
             .caroussel .dotgrid .item {
-                width: 290px;
+                width: 100%;
             }
         }
