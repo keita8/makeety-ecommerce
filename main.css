@@ -965,6 +965,15 @@ STYLE REUTILISÉE
             color: var(--flashwhite-color);
             border-color: var(--dark-color);
         }
+        /* .scrollto .wrapper .item {
+            width: 290px !important;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+        } */
+        
+        .scrollto .wrapper {
+            --dispaly: grid;
+        }
         /*-----------------------MEDIA QUERIES---------------------*/
         
         @media (min-width:768px) {
