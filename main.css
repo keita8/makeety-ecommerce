@@ -1079,9 +1079,9 @@ STYLE REUTILISÉE
         }
         
         .inner-footer .bottom {
-            padding: 40px 0;
+            padding: 10px 0;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
         }
         /*-----------------------MEDIA QUERIES---------------------*/
         
