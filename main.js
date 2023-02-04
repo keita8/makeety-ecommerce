@@ -178,3 +178,12 @@ const caroussel = new Swiper('.carouselbox', {
 //     },
 
 // });
+
+// SECTION CATEGORIE
+const sorter = document.querySelector('.sort-list');
+if (sorter) {
+    const sortLi = sorter.querySelector('li');
+    sorter.querySelector('.opt-trigger').addEventListener('click', function() {
+        sorter.querySelector('ul').classList.toggle('show');
+    })
+}
