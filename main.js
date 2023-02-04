@@ -44,6 +44,47 @@ const swiper = new Swiper('.sliderbox', {
 
 });
 
+const carousel = new Swiper('.carouselbox', {
+    // Optional parameters
+
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+
+    // If we need pagination
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        clickable: true,
+    },
+
+    breakpoints: {
+        481: {
+            slidePerView: 2,
+            slidePerGroup: 1,
+            centeredSlides: false
+        },
+        640: {
+            slidePerView: 3,
+            slidePerGroup: 3,
+            centeredSlides: false
+        },
+        992: {
+            slidePerView: 4,
+            slidePerGroup: 4,
+            centeredSlides: false
+        },
+    },
+
+
+    // loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    // },
+
+});
+
 
 
 

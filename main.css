@@ -830,11 +830,37 @@ STYLE REUTILISÉE
         .guide .scrollto .wrapper::-webkit-scrollbar-thumb {
             --border-color: #f0f9f8;
         }
-        /* .caroussel .dotgrid .wrapper {
+        
+        .caroussel .inner-wrapper {
+            position: relative;
+        }
+        
+        .caroussel .dotgrid .wrapper {
             display: flex;
+            /* justify-content: center;
+            align-items: center; */
             grid-template-columns: unset;
             gap: unset;
-        } */
+        }
+        
+        .caroussel .nav>div::after {
+            content: none;
+        }
+        
+        .caroussel .nav>div {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--green-midnight);
+            border-radius: 50%;
+            color: var(--dark-color);
+            font-size: 20px;
+            -webkit-tap-highlight-color: transparent;
+            transition: var(--transition-background), var(--transiton-color), var(--transition-border);
+        }
+        
+        .caroussel .nav .swiper-button-disabled {
+            opacity: 0;
+        }
         /*-----------------------MEDIA QUERIES---------------------*/
         
         @media (min-width: 992px) {
@@ -915,5 +941,22 @@ STYLE REUTILISÉE
         @media (min-width:1400px) {
             .mega-content {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            .caroussel .inner-wrapper {
+                max-width: 1250px;
+                margin: 0 auto;
+                padding: 0 40px;
+            }
+            .caroussel .nav>.swiper-button-right {
+                right: -40px;
+            }
+            .caroussel .nav>.swiper-button-left {
+                left: -40px;
+            }
+        }
+        
+        @media (max-width:480px) {
+            .caroussel .dotgrid .item {
+                width: 270px;
             }
         }
