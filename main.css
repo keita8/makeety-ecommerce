@@ -801,7 +801,7 @@ STYLE REUTILISÉE
         
         .page-home main>div:not(.slider),
         .inner-footer {
-            padding: 100px 0;
+            padding: 50px 0;
         }
         
         .guide {
@@ -879,6 +879,14 @@ STYLE REUTILISÉE
         
         .caroussel .nav .swiper-button-disabled {
             opacity: 0;
+        }
+        
+        .caroussel {
+            padding-top: 0;
+        }
+        
+        .guide {
+            padding-bottom: 0;
         }
         /* -------- CATEGORIE-----*/
         
