@@ -44,7 +44,7 @@ const swiper = new Swiper('.sliderbox', {
 
 });
 
-const carousel = new Swiper('.carouselbox', {
+const caroussel = new Swiper('.carouselbox', {
     // Optional parameters
 
     loop: true,
@@ -62,17 +62,17 @@ const carousel = new Swiper('.carouselbox', {
     breakpoints: {
         481: {
             slidePerView: 2,
-            slidePerGroup: 1,
+            // slidePerGroup: 1,
             centeredSlides: false
         },
         640: {
             slidePerView: 3,
-            slidePerGroup: 3,
+            // slidePerGroup: 3,
             centeredSlides: false
         },
         992: {
             slidePerView: 4,
-            slidePerGroup: 4,
+            // slidePerGroup: 4,
             centeredSlides: false
         },
     },

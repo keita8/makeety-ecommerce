@@ -830,18 +830,20 @@ STYLE REUTILISÉE
         .guide .scrollto .wrapper::-webkit-scrollbar-thumb {
             --border-color: #f0f9f8;
         }
+        /* .caroussel img {
+            width: 270px;
+            height: auto;
+            overflow: hidden;
+        } */
         
         .caroussel .inner-wrapper {
             position: relative;
         }
-        
-        .caroussel .dotgrid .wrapper {
+        /* .caroussel .dotgrid .wrapper {
             display: flex;
-            /* justify-content: center;
-            align-items: center; */
             grid-template-columns: unset;
-            gap: unset;
-        }
+            gap: 15px;
+        } */
         
         .caroussel .nav>div::after {
             content: none;
